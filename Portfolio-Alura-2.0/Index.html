@@ -32,8 +32,11 @@
     <link rel="stylesheet" href="Styles/Coding-Experience/Project__Container/container__Content/Container__title.css">
     <link rel="stylesheet" href="Styles/Coding-Experience/Project__Container/container__Content/Container__description.css">
     <link rel="stylesheet" href="Styles/Coding-Experience/Project__Container/container__Content/Container__buttons/Container__button.css">
-    <link rel="stylesheet" href="Styles/Coding-Experience/Project__Container/container__Content/">
-    <link rel="stylesheet" href="Styles/Coding-Experience/Project__Container/container__Content/">
+    <link rel="stylesheet" href="Styles/Education Section/education__title.css">
+    <link rel="stylesheet" href="Styles/Education Section/Educations__list.css">
+    <link rel="stylesheet" href="Styles/Education Section/EducationList__item.css">
+    <link rel="stylesheet" href="Styles/Education Section/EducationList__imgContainer.css">
+    <link rel="stylesheet" href="Styles/Education Section/EducationList__Content.css">
     <title>Document</title>
 </head>
 <body>
@@ -176,7 +179,7 @@
             <hr class="style-two">
 
             <div class="Beginners__Projects__section">
-                <h2>Beginners Projects</h2>
+                <h2>Advance Projects</h2>
                 <p class="Beginners__Projects__Descreption">Please review a few of my practice projects that I have done while studying the Basic of JS</p>
 
                 <div class="project__container">
@@ -213,20 +216,58 @@
         </div>
     </section>
 
-    <fieldset>     
-        <legend>Formulário de cadastro de livros</legend>        
-            <form>             
-            <label>Livro</label>             
-            <input type="text" value="HTML5 e CSS3"/>            
-            <label>Autor</label>             
-            <input type="text" value="Lucas Mazza"/>            
-            <label>ISBN</label>             
-            <input type="text" value="978-85-66250-05-3"/>             
-            <label>Valor</label> <input type="number" />             
-            <label>Data da compra</label>             
-            <input type="date" />             
-            <button>Cadastrar</button>         
-        </form>
-    </fieldset>
+    <section class="Education__Section container">
+        <h2 class="education__title">Software Studies</h2>
+        <ul class="Educations__list">
+            <li class="EducationList__item">
+                <div class="Educationlist__ImgContainter">
+                    <img src="./Assets/coursera.png" alt="" class="Education__Img Education__img--Couresera">
+                </div>
+                <div class="EducationList__Content">
+                    <h3 class="EducationList__title">Coursera</h3>
+                    <p class="EducationList__Description">year</p>
+                </div>
+            </li>
+            <li class="EducationList__item">
+                <div class="Educationlist__ImgContainter">
+                    <img src="./Assets/alura.jpg" alt="" class="Education__Img Education__img--Couresera">
+                </div>
+                <div class="EducationList__Content">
+                    <h3 class="EducationList__title">Coursera</h3>
+                    <p class="EducationList__Description">year</p>
+                </div>
+            </li>
+            <li class="EducationList__item">
+                <div class="Educationlist__ImgContainter">
+                    <img src="./Assets/codecamp.jpeg" alt="" class="Education__Img Education__img--Couresera">
+                </div>
+                <div class="EducationList__Content">
+                    <h3 class="EducationList__title">Coursera</h3>
+                    <p class="EducationList__Description">year</p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section class="ContactForm">
+        <img src="Assets/gato.jpg" alt="" class="Contactform__img">
+        <div class="Contactform__content">
+            <h2 class="Contactform__title">Would Like to contact me?</h2>
+            <p class="Contactform__description">Please comple the form below:</p>
+
+            <form action="https://formsubmit.co/krysthopher@gmail.com" method="POST">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="Please enter Email" required>
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                <button type="submit">Send</button>
+                <input type="hidden" name="_captcha" value="false">
+
+
+            </form>
+        </div>
+        
+    </section>
+
 </body>
 </html>

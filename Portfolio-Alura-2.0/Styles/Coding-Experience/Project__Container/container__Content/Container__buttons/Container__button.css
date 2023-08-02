@@ -23,3 +23,24 @@
 .button-right{
     color: #ffffff;
 }
+
+/* this is for tablet/medium devices */
+@media screen and (min-device-width: 798px) and (max-width: 1200px){
+    .project__button{
+        padding: 10px;
+        font-size: 1rem;
+        width: auto;
+        margin: 1.2rem;
+    }
+}
+
+
+/* this is for smartphone/small devices */
+@media screen and (min-device-width: 320px) and (max-width: 797px){
+    .project__button{
+        padding: 10px;
+        font-size: 1rem;
+        width: auto;
+        margin: 1.2rem;
+    }
+}
