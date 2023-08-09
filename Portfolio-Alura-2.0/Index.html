@@ -36,7 +36,13 @@
     <link rel="stylesheet" href="Styles/Education Section/Educations__list.css">
     <link rel="stylesheet" href="Styles/Education Section/EducationList__item.css">
     <link rel="stylesheet" href="Styles/Education Section/EducationList__imgContainer.css">
-    <link rel="stylesheet" href="Styles/Education Section/EducationList__Content.css">
+    
+    <link rel="stylesheet" href="Styles/Contact-section/Contact.css">
+    <link rel="stylesheet" href="Styles/Contact-section/Contact__image.css">
+    <link rel="stylesheet" href="Styles/Contact-section/contactform.css">
+    <link rel="stylesheet" href="Styles/Contact-section/contactform--header.css">
+    <link rel="stylesheet" href="Styles/Contact-section/">
+    <link rel="stylesheet" href="Styles/Contact-section/">
     <title>Document</title>
 </head>
 <body>
@@ -250,24 +256,33 @@
 
     </section>
 
-    <section class="ContactForm">
-        <img src="Assets/gato.jpg" alt="" class="Contactform__img">
-        <div class="Contactform__content">
-            <h2 class="Contactform__title">Would Like to contact me?</h2>
-            <p class="Contactform__description">Please comple the form below:</p>
+    <section class="contact container--backgroundcolor">
+        <div >
+            <img class="contact__image" src="Assets/gato.jpg" alt="" class="contact-img">
+        </div>
+        <div class="contactform">
+            <h2 class="contactform__title">Contact Me</h2>
+            <p class="contactform__description">
+                Dont miss the opportunity to talk with me.
+            </p>
 
-            <form action="https://formsubmit.co/krysthopher@gmail.com" method="POST">
-                <input type="text" name="Name" placeholder="Full Name" required>
-                <input type="email" name="Email" placeholder="Please enter Email" required>
-                <textarea name="Message" id="" cols="30" rows="10" placeholder="Enter your message" required></textarea>
-                <button type="submit">Send</button>
-                <input type="hidden" name="_captcha" value="false">
+            
+            <form id="contact-form">
+                <label for="user_name">Name</label>
+                <input type="text" id="user_name" placeholder="Your name" required/>
 
+                <label for="user_email">Email</label>
+                <input type="email" id="user_email" name="user_email" placeholder="example@email.com" required>
 
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" placeholder="Your message... " required></textarea>
+
+                <button type="submit" class="submit-btn">Send</button>
             </form>
         </div>
-        
     </section>
 
+    <script src='https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js'></script>
+    <script src="script.js"></script>
 </body>
 </html>
